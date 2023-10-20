@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tchubaruba</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+</head>
+
+<body class="site">
+    <header class="header">
+        <div class="main-menu container container-flex">
+            <img src="./img/logo-salesforce.svg" class="logo"></img>
+            <nav>
+                <!-- <img src="./img/hamburger-menu-svgrepo-com.png" alt=""> -->
+                <ul class="menu">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Tchubaruba</a></li>
+                    <li><a href="formulario.html">Contate-nos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="titulo-principal">
+            <h1>Tchubaruba</h1>
+        </div>
+
+        <section class="descricao">
+            <section class="box-descricao integrantes">
+                <article class="texto">
+                    <h1 class="titulo">Integrantes do grupo</h1>
+                    <br>
+                    <p>1TDSPR</p>
+                    <br>
+                    <p>Jhonatan Sampaio Ferreira- RM553791</p>
+                    <p>Levi Yuki Utima - RM553580</p>
+                    <p>Vivian Sy Ting Wu - RM55369</p>
+                </article>
+            </section>
+
+            <section class="box-pagina">
+                <article>
+                    <h2>Objetivo da página</h2><br>
+                    <p>Informar ao professor os integrantes do grupo responsável por este projeto.</p>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="logo footer-container">
+            <img src="./img/logo-salesforce.svg" alt="">
+        </div>
+        <div class="social container">
+            Links e redes sociais
+        </div>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Chatbot -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "38003f98-cccc-493d-90fc-5b065eeb0db6", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "8da43033-b0fc-4d3a-bac7-78f069ee2818", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+</body>
+
+</html>

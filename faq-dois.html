@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tchubaruba</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="main-menu container container-flex">
+            <img src="./img/logo-salesforce.svg" class="logo"></img>
+            <nav>
+                <!-- <img src="./img/hamburger-menu-svgrepo-com.png" alt=""> -->
+                <ul class="menu">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Tchubaruba</a></li>
+                    <li><a href="formulario.html">Contate-nos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="titulo-principal">
+            <h1>Assunto X</h1>
+        </div>
+
+        <article>
+            <section class="topicos">
+                <h2>1. Tópico 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit porro voluptates obcaecati nobis
+                asperiores, blanditiis eaque omnis, similique, animi laudantium explicabo nam dolor. Laboriosam
+                voluptate repellat cumque excepturi eveniet commodi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dicta a ea! Voluptate obcaecati ad illo
+                beatae eaque et ullam! Soluta eius in fuga excepturi mollitia, laboriosam beatae repellendus odio.</p>
+            <figure class="img-ilustrativa">
+                <img src="./img/img-ilustrativa-assuntoX.jpg"
+                    alt="imagem com fundo preto e o texto 'Imagem ilustrativa, Assunto X'">
+            </figure>
+            </section>
+
+            <section class="topicos">
+                <h2>2. Tópico 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eveniet assumenda, quod fugit numquam
+                voluptate ab aspernatur, expedita officiis ipsam autem nobis saepe. Minima amet libero iste, excepturi
+                asperiores officia?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tenetur saepe reprehenderit,
+                praesentium, totam perspiciatis recusandae provident quasi optio repudiandae quas adipisci inventore
+                necessitatibus similique est sunt quam dolore animi.</p>
+            </section>
+            
+            <section class="topicos">
+                <h2>3. Tópico 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempore eligendi possimus ipsa optio recusandae, facere tenetur temporibus minima dolores aut. Fuga earum totam suscipit iure perspiciatis consequuntur tempore libero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae velit eaque accusantium sequi dolorum commodi, ex, deleniti laboriosam, est et consectetur voluptate non laudantium optio? Ullam maiores ratione nam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente corporis officia ab dicta quam molestiae ullam cum facilis saepe, voluptates vero quidem veniam nostrum in illum eius, repellendus corrupti.</p>
+            </section>
+        </article>
+
+        <hr>
+        <section>
+            <article>
+                <h2 class="titulo">Objetivo da página</h2><br>
+                <p>Nesta página, o usuário encontrará mais informações e/ou informações mais detalhadas sobre o assunto desejado.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="logo footer-container">
+            <img src="./img/logo-salesforce.svg" alt="">
+        </div>
+        <div class="social container">
+            Links e redes sociais
+        </div>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Chatbot -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "38003f98-cccc-493d-90fc-5b065eeb0db6", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "8da43033-b0fc-4d3a-bac7-78f069ee2818", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+
+</html>

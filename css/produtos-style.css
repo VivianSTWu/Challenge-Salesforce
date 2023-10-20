@@ -1,0 +1,47 @@
+
+.prod-descr {
+    font-size: .9em;
+}
+
+.main-produtos {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em auto;
+    align-items: flex-start;
+}
+
+.pag-produto {
+    text-align: center;
+    font-size: 2em;
+}
+
+.box-dir {
+    text-align: center;
+}
+
+.box-esq {
+    text-align: center;
+}
+
+.box-pagina {
+    text-align: center;
+    text-align: start;
+}
+
+.img-produtos {
+    max-width: 100%;
+    padding: 5px;
+    margin-top: 1.5em;
+}
+
+button {
+    padding: 10px;
+    background-color: #12649a;
+    border-radius: 5px;
+    border: none;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
