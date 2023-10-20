@@ -81,7 +81,7 @@
                         <div class="form-campos">
                             <label for="tamanho-empresa">Tamanho da empresa</label>
                             <select name="tamanho-empresa" id="tamanho-empresatamanho-empresa">
-                                <option disabled="" value="" selected="">--Selecione uma opção--</option>
+                                <option disabled="" value="" selected="">-- Selecione uma opção --</option>
                                 <option value="micro">1 a 50 funcionários</option>
                                 <option value="pequena">51 a 300 funcionários</option>
                                 <option value="média">301 a 1000 funcionários</option>
@@ -92,7 +92,7 @@
                         <div class="form-campos">
                             <label for="pais-regiao">País/Região</label>
                             <select id="pais-regiao" name="pais-regiao" aria-required="true" required="true">
-                                <option disabled="" label="País/Região" selected="" value="">País/Região</option>
+                                <option disabled="" label="-- País/Região --" selected="" value="--País/Região--">País/Região</option>
                                 <option value="US">Estados Unidos</option>
                                 <option value="AF">Afeganistão</option>
                                 <option value="AL">Albânia</option>
@@ -329,6 +329,7 @@
                             <textarea id="comentarios" name="comentarios" rows="6"
                                 placeholder="Perguntas/Comentários"></textarea>
                         </div>
+                        <input class="form-enviar" type="button" value="Enviar">
                     </form>
                 </div>
             </section>
